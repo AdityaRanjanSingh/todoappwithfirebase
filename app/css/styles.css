@@ -1,0 +1,91 @@
+.text-color-white{
+    color: white;
+}
+body{
+    background-color: #00275E;
+}
+#userEmail{
+	border: none;
+	border-bottom: 2px solid blue;
+	margin-bottom: 10px;
+	background-color: transparent;
+}
+#userPassword{
+	border: none;
+	border-bottom: 2px solid blue;
+	margin-bottom: 10px;
+	background-color: transparent;
+}
+#signInName{
+	border: none;
+	border-bottom: 2px solid blue;
+	margin-bottom: 10px;
+	background-color: transparent;
+}
+.centreAligned{
+	margin: auto;
+	width: 100%;
+}
+.welcome-radio{
+	padding: 0px ;
+}
+.navbar-margin-top{
+	margin-top: 4%;
+}
+
+.notes-action-buttons-margin{
+	margin: 4px;
+}
+.notes-action-buttons{
+
+	    background: transparent;
+    border: none;
+    color: darkslategrey;
+}
+#myModal{
+	margin-top: 50%
+}
+textarea{
+	resize: none;
+}
+.noteTitle{
+	width: 90%;
+}
+.SearchField{
+	background-color: white;	
+	border-radius: 4px;
+}
+.no-margin-bottom{
+	margin-bottom: 0px;
+}
+.searchInput{
+	border: none;
+	width: 82%;
+	margin-left: 5%;
+}
+.searchIcon{
+	margin-right: 5%;
+}
+input{
+	outline: none;
+}
+
+.notesItemTitle{
+	    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    width: 75%;
+   
+}
+.notesItem{
+	margin: 10px 5px;
+}
+.dialogItemBody{
+	width: 100%;
+}
+.loginLogo{
+	    background: transparent;
+    color: white;
+    padding: 27px;
+}

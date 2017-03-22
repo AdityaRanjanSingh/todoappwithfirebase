@@ -1,0 +1,101 @@
+
+	<nav class="navbar navbar-default no-margin-bottom" role="navigation">
+	<div class="navbar-header navbar-margin-top">
+		<div class="pull-left ">
+			<button class="notes-action-buttons"><span><i class="fa fa-bandcamp fa-2x"></i></span></button>
+		</div>
+		
+		<div class="pull-right ">
+		<button ng-init="Search=false" ng-click="Search  = !Search" class="notes-action-buttons">
+			<span>
+				<i class="fa fa-search fa-2x"></i>
+			</span>
+		</button >
+		<button class="notes-action-buttons" data-toggle = "modal" data-target = "#myModal">
+			<span>
+				<i class="fa fa-plus fa-2x"></i>
+			</span>
+		</button >
+		<button class="notes-action-buttons" ng-click="notesDelete=!notesDelete">
+			<span>
+				<i class="fa fa-trash fa-2x"></i>
+			</span>
+		</button>
+		<button class="notes-action-buttons"  ng-click="signOuttoggle()">
+			<span>
+				<i class="fa fa-power-off fa-2x"></i>
+			</span>
+		</button>
+		
+	</div>
+	</div>
+</nav>
+<div class="SearchField" ng-show="Search">
+	<input class="searchInput" type="text" placeholder="Search" ng-model="SearchText">
+	<span>
+	<i class="fa fa-search searchIcon "></i>	
+	</span>
+	
+</div>
+<div class = "modal fade" id = "myModal" tabindex = "-1" role = "dialog" 
+   aria-labelledby = "myModalLabel" aria-hidden = "true">
+   
+   <div class = "modal-dialog">
+      <div class = "modal-content">
+         
+         <div class = "modal-header">
+            <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                  &times;
+            </button>
+            
+            <div class = "modal-title" >
+               <input class ="noteTitle" type="text" placeholder="Title" ng-model="dialogNotesTitle">
+            </div>
+         </div>
+         
+         <div class = "modal-body">
+           	<textarea rows="4" cols="28" class="dialogItemBody" ng-model="dialogNotesBody"></textarea>
+         </div>
+         
+         <div class = "modal-footer">
+            <button  type = "button" class = " pull-left btn btn-default" data-dismiss = "modal">
+               Cancel
+            </button>
+            
+            <button ng-click="saveNewNote()" type = "button" class = " pull-right btn btn-primary">
+               Save
+            </button>
+         </div>
+         
+      </div><!-- /.modal-content -->
+   </div>
+</div>
+
+
+<!-- /* panel notes item content*/ -->
+<div class = "notesItem panel panel-default">
+      <div class = "panel-heading clearfix">
+         <h4 class = "notesItemTitle pull-left panel-title">
+            <input ng-show="notesDelete" type="checkbox" name="">
+               <a data-toggle = "collapse"  data-target = "#collapseThree">
+                  Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt 
+               sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+             </a>
+         </h4>
+         <div class="pull-right">
+             <button class="notes-action-buttons"><span><i class="fa fa-trash "></i></span></button>
+             <button class="notes-action-buttons"><span><i class="fa fa-pencil"></i></span></button>
+         </div>         
+      </div>
+     
+      <div id = "collapseThree" class = "panel-collapse collapse">
+         <div class = "panel-body">
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt 
+               sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+         </div>
+      </div>
+     
+   </div>
+
+	
+
